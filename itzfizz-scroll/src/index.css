@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f1ebdd;
+  --color-ink: #22201c;
+  --color-lime: #ff3b30;
+  --font-sans: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-hand: "Caveat", cursive;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--color-cream); color: var(--color-ink); font-family: var(--font-sans); overflow-x: hidden; }
+:focus-visible { outline: 3px solid var(--color-ink); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
